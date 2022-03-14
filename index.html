@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishas Creative Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+      <!-- Favicons -->
+  <link href="https://ishas.in/assets/img/favicon.png" rel="icon">
+  <link href="https://ishas.in/assets/img/favicon.png" rel="apple-touch-icon">
+</head>
+<body>
+    <style>
+        .nav {
+  height: 50px;
+  width: 100%;
+  /* background-color: #4d4d4d; */
+  position: relative;
+  flex-wrap: nowrap!important;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  margin-left: 3rem;
+    margin-top: -0.9rem;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  /* margin-left: 40%; */
+}
+
+/* .nav > .nav-links > a {
+    display: inline-block;
+    padding: 34px 10px 13px 10px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+} */
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:576px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000000;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 64px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .nav > .nav-links >a {
+    display: inline-block;
+    padding: 40px 10px 13px 0px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+    </style>
+   <header class="header" id="header">
+       <!-- <a href="#"><img src="./images/atom.png" alt="" class="img-fluid logo"></a>
+       <ul class="nav-item">
+           <a href="#"><li>home</li></a>
+           <a href="#about-us"><li>about</li></a>
+           <a href="#service-sec"><li>service</li></a>
+           <a href="#portfolio-card"><li>portfolio</li></a>
+           <a href="#footer-sec"><li>contact</li></a>
+           <i class="fas fa-bars fa-2x burger"></i>
+       </ul> -->
+       <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="#"><img src="./images/atom.png" alt="" class="img-fluid logo"></a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about-us">About</a>
+          <a href="#service-sec">Service</a>
+          <a href="#slider-sec">Portfolio</a>
+          <a href="#footer-sec">Contact</a>
+        </div>
+      </div>
+   </header>
+   
+   <main id="banner-image"> 
+   <h2 class="text-uppercase">welcome to isha's media</h2>
+   <p>this website is only for learn demo</p>
+   <center>
+   <a class="get-started" href="https://ishas.in/index.html">get started <i class="fas fa-play"></i></a></center>
+   </main>
+   <section id="portfolio-card">
+       <div class="container">
+           <div class="row portfolio-row">
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                   <a href="">
+                   <div class="card">
+                       <img src="./images/testimonials-1.jpg" alt="" class="img-fluid card-image">
+                   
+                   <div class="card-body">
+                        <h2>branding</h2>
+                        <p class="client">client : EDEN CDC</p>
+                        <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                   </div>
+                </div>
+                </a>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <a href="">
+                <div class="card">
+                    <img src="./images/testimonials-2.jpg" alt="" class="img-fluid card-image">
+                
+                <div class="card-body">
+                     <h2>campaign</h2>
+                     <p class="client">client : DQ</p>
+                     <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                </div>
+             </div>
+             </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <a href="">
+                <div class="card">
+                    <img src="./images/testimonials-3.jpg" alt="" class="img-fluid card-image">
+                
+                <div class="card-body">
+                     <h2>mobile app design</h2>
+                     <p class="client">client : TOP</p>
+                     <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                </div>
+             </div>
+             </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <a href="">
+                <div class="card">
+                    <img src="./images/testimonials-4.jpg" alt="" class="img-fluid card-image">
+                
+                <div class="card-body">
+                     <h2>branding</h2>
+                     <p class="client">client : EDEN CDC</p>
+                     <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                </div>
+             </div>
+             </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <a href="">
+                <div class="card">
+                    <img src="./images/testimonials-5.jpg" alt="" class="img-fluid card-image">
+                
+                <div class="card-body">
+                     <h2>branding</h2>
+                     <p class="client">client : EDEN CDC</p>
+                     <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                </div>
+             </div>
+             </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <a href="">
+                <div class="card">
+                    <img src="./images/testimonials-6.jpg" alt="" class="img-fluid card-image">
+                
+                <div class="card-body">
+                     <h2>branding</h2>
+                     <p class="client">client : EDEN CDC</p>
+                     <P class="text-center para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus quis quasi, vel asperiores dignissimos magni necessitatibus qui non sint earum voluptatem ea, est, nobis eligendi. Nam excepturi beatae dolore.</P>
+                </div>
+             </div>
+             </a>
+            </div>
+
+           </div>
+       </div>
+
+   </section>
+   <section id="about-us">
+       <div class="container">
+           <div class="row">
+               <div class="col-12 col-md-6 col-lg-6">
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_vt5qgnum.json"  background="transparent"  speed="1" class="lottie"  loop  autoplay data-aos="fade-up"
+                data-aos-duration="3000"></lottie-player>
+               </div>
+               <div class="col-12 col-md-6 col-lg-6">
+                   <div class="about-text">
+                <h3>About <span></span> Us</h3>
+                <div class="line" ></div>
+                <div class="paragraph" data-aos="fade-left" data-aos-duration="3000">
+                <p>ISHA’S Creative Media is one of the leading and Best Advertising Agency in Calicut, Kerala. As we never compromise on our quality of production and advertisement, you might be surprised and delighted by approaching us.</p>
+                <p>Our Creative Advertising Agency in Calicut has a bunch of creative minds to give the best ideas who are mentored by efficient and talented souls. We offer a vivid range of services to our clients such as Digital Marketing, Website Development, Printing Advertisements, Search Engine Optimisation (SEO), Social Media Marketing (SMM), and Video Production.</p>
+                <p>We are also one of the Best Branding and Digital Marketing Agency in Calicut too. As we are located in the heart of Calicut City, Nadakkavu. It is very easy to get access with us. Since we are in this field for over a decade, it feels easy to study market research and other branding processes. As we provide the best working space and atmosphere to our team, it can be seen in their works also.</p>
+               </div>
+            </div>
+            </div>
+           </div>
+       </div>
+
+   
+   </section>
+   <section class="slider-pages" id="slider-sec">
+
+    <article class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
+      <div class="slider-page slider-page--left">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--left -->
+  
+      <div class="slider-page slider-page--right">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+            <h1 class="slider-page__title slider-page__title--big">
+                Welcome to ISHA'S
+            </h1>
+            <!-- /.slider-page__title slider-page__title--big -->
+            <h2 class="slider-page__title">
+              Start of your story
+            </h2>
+            <!-- /.slider-page__title -->
+            <p class="slider-page__description">
+                An integrated creative Advertising Agency in Calicut full of curious, interested, and very creative people that fuses creative design execution, marketing strategy, and worldly experience, all mixed with a hefty dose of business. We’re your partner, working beside you at every stage in a collaborative approach to get your voice heard.
+            </p>
+            <!-- /.slider-page__description -->
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--right -->
+    </article>
+    <!-- /.js-scrolling__page js-scrolling__page-1 js-scrolling--active -->
+  
+  
+    <article class="js-scrolling__page js-scrolling__page-2">
+      <div class="slider-page slider-page--left">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+            <h1 class="slider-page__title">
+                How The Bunch Works
+            </h1>
+            <!-- /.slider-page__title -->
+            <p class="slider-page__description">
+                We understand your objectives and we build a creative to reflect your personality. We recreate your identity, uniquely, unequaled and unrivaled.
+            </p>
+            <!-- /.slider-page__description -->
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--left -->
+  
+      <div class="slider-page slider-page--right">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--right -->
+    </article>
+    <!-- /.js-scrolling__page js-scrolling__page-2 -->
+  
+  
+    <article class="js-scrolling__page js-scrolling__page-3">
+      <div class="slider-page slider-page--left">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--left -->
+  
+      <div class="slider-page slider-page--right">
+        <div class="slider-page--skew">
+          <div class="slider-page__content">
+            <h1 class="slider-page__title">
+                What We Do
+            </h1>
+            <!-- /.slider-page__title -->
+            <p class="slider-page__description">
+                Craft aspirational narratives and solutions to engage your audience. We create emotional connections between your brand and share your values with your audience.
+            </p>
+            <!-- /.slider-page__description -->
+          </div>
+          <!-- /.slider-page__content -->
+        </div>
+        <!-- /.slider-page--skew -->
+      </div>
+      <!-- /.slider-page slider-page--right -->
+    </article>
+    <!-- /.js-scrolling__page js-scrolling__page-3 -->
+  
+  </section>
+  <!-- /.slider-pages -->
+  
+   <section id="service-sec">
+       <h2>What <span>We Do</span></h2>
+       <div class="container">
+       <div class="row card-row">
+           <div class="card-main">
+           <div class="col-12 col-md-6 col-lg-6">
+           <div class="card-sec">
+            <a href="https://ishas.in/Branding-Agency-in-Calicut.html"><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_zer1z8ap.json"  background="transparent"  speed="1"  class="lottie-2"  loop  autoplay></lottie-player></a>
+           </div>
+        </div>
+        <div class="line-2"></div>
+        <div class="col-12 col-md-6 col-lg-6 b2">
+            <div class="card-title">
+                <h4><a href="https://ishas.in/Branding-Agency-in-Calicut.html">BRANDING</a></h4>
+                <P>While working in an industry where there are many brands, it is crucial to have a unique identity. Your brand name gives you a professional name and distinguishes you from your competitors. Our Branding Agency in Calicut helps you in creating your unique identity by designing the perfect logo for your business.</P>
+                <a class="request-demo" href="mailto:ishascreativemedia@gmail.com">Request Demo</a>
+            </div>
+         </div>
+         <img src="./images/right-pattern.png" alt="" class="animate-image animation-img">
+        </div>
+        <!-- second -->
+        <div class="card-main-2">
+            <div class="col-12 col-md-6 col-lg-6">
+            <div class="card-sec">
+             <a href="https://ishas.in/Branding-Agency-in-Calicut.html"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_VegC5p.json"  background="transparent"  speed="1"  class="lottie-2"  loop  autoplay></lottie-player></a>
+            </div>
+         </div>
+         <div class="line-2"></div>
+         <div class="col-12 col-md-6 col-lg-6 b3">
+             <div class="card-title">
+                 <h4><a href="https://ishas.in/Branding-Agency-in-Calicut.html">ADVERTISING</a></h4>
+                 <P>The Balance of Small Business makes launching and managing your own business easy. It is home to experts who provide clear, practical advice on entrepreneurship and management. Whether you’re just starting up or you want to take your company to the next level.</P>
+                 <a class="request-demo" href="mailto:ishascreativemedia@gmail.com">Request Demo</a>
+             </div>
+          </div>
+          <!-- <img src="./images/right-pattern.png" alt="" class="animate-image animation-img"> -->
+         </div>
+        <!-- second -->
+
+        <!-- third -->
+        <div class="card-main-2">
+            <div class="col-12 col-md-6 col-lg-6">
+            <div class="card-sec">
+             <a href="https://ishas.in/Branding-Agency-in-Calicut.html"><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bzqnweae.json"  background="transparent"  speed="1"  class="lottie-2"  loop  autoplay></lottie-player></a>
+            </div>
+         </div>
+         <div class="line-2"></div>
+         <div class="col-12 col-md-6 col-lg-6 b4">
+             <div class="card-title">
+                 <h4><a href="https://ishas.in/Branding-Agency-in-Calicut.html">DIGITAL MARKETING</a></h4>
+                 <P>It’s vital to start by reflecting on your goals and company mission so that these can inform your entire marketing strategy before you start drawing attention to your business with advertising. It's goal is to have a complete campaign that provides a thorough process for creating happy customers. Our Digital Marketing Agency in Calicut can offer the best services for your business and brand.</P>
+                 <a class="request-demo" href="mailto:ishascreativemedia@gmail.com">Request Demo</a>
+             </div>
+          </div>
+          <!-- <img src="./images/right-pattern.png" alt="" class="animate-image animation-img"> -->
+         </div>
+        <!-- third -->
+        <!-- four -->
+        <div class="card-main-2">
+            <div class="col-12 col-md-6 col-lg-6">
+            <div class="card-sec">
+             <a href="https://ishas.in/Branding-Agency-in-Calicut.html"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w9awb8a8.json"  background="transparent"  speed="1"  class="lottie-2"  loop  autoplay></lottie-player></a>
+            </div>
+         </div>
+         <div class="line-2"></div>
+         <div class="col-12 col-md-6 col-lg-6 b5">
+             <div class="card-title">
+                 <h4><a href="https://ishas.in/Branding-Agency-in-Calicut.html">PRODUCTION</a></h4>
+                 <P>With the elements of strategy and authorization of designing our Production Company in Calicut implement your work into more productive work and theory, we implant the best platform to convey our works and their aesthetic treat. Also, we give more artistic ability in the best service with the trial.</P>
+                 <a class="request-demo" href="mailto:ishascreativemedia@gmail.com">Request Demo</a>
+             </div>
+          </div>
+          <img src="./images/right-pattern.png" alt="" class="animate-image animation-img">
+         </div>
+        <!-- four -->
+       </div>
+    </div>
+
+   </section>
+
+   <footer id="footer-sec">
+    <div class="container">
+        <div class="row footer-row">
+
+    
+    <div class="col-12 col-md-3 col-lg-3">
+        <div class="useful-link">
+            <h2 class="headings">USEFUL LINKS</h2>
+            <ul class="footer-ul">
+                <a href="#"><li class="use-link"><i class="fa-solid fa-angles-right"></i>Home</li></a>
+                <a href="#about-us"><li class="use-link"><i class="fa-solid fa-angles-right"></i>About</li></a>
+               <a href="#service-sec"> <li class="use-link"><i class="fa-solid fa-angles-right"></i>Service</li></a>
+                <a href="#slider-sec"><li class="use-link"><i class="fa-solid fa-angles-right"></i>Portfolio</li></a>
+                <a href="#footer-sec"><li class="use-link"><i class="fa-solid fa-angles-right"></i>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="col-12 col-md-3 col-lg-3">
+        <div class="useful-link">
+            <h2 class="headings">OUR SERVICES</h2>
+            <ul class="footer-ul">
+                <a href=""><li class="use-link"><i class="fa-solid fa-angles-right"></i>Branding</li></a> 
+                <a href=""><li class="use-link"><i class="fa-solid fa-angles-right"></i>Advertising</li></a>
+                <a href=""><li class="use-link"><i class="fa-solid fa-angles-right"></i>Digital Marketing</li></a>
+                <a href=""><li class="use-link"><i class="fa-solid fa-angles-right"></i>Production</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="col-12 col-md-3 col-lg-3">
+        <div class="useful-link">
+            <h2 class="headings">CONTACT US</h2>
+            <p class="use-link">Aerosoft Plaza Building <br>
+                English Church Cross Road <br>
+                Nadakkavu, Calicut, Kerala.</p>
+                <strong class="email-phone">Phone:  </strong>
+                <a class="use-link" href="tel: +91 884 898 3253">  +91 884 898 3253</a><br>
+                <strong class="email-phone">Email:  </strong>
+                <a class="use-links" href="mailto:ishascreativemedia@gmail.com">ishascreativemedia@gmail.com</a>
+        </div>
+    </div>
+    <div class="col-12 col-md-3 col-lg-3">
+        <div class="useful-link">
+            <h2 class="headings">ABOUT ISHA’S</h2>
+            <p class="use-link">An integrated creative Advertising Agency in Calicut full of curious, interested, and very creative people that fuses creative design execution, marketing strategy, and worldly experience, all mixed with a hefty dose of business. We’re your partner, working beside you at every stage in a collaborative approach to get your voice heard.</p>
+        </div>
+    </div>
+    <div class="new-line"></div>
+    <div class="icons">
+    <a href="https://www.facebook.com/ishascreativemedia"><i class="fab fa-facebook-square fa-1x icon-i"></i></a>
+    <a href="https://www.instagram.com/ishascreativemedia/"><i class="fab fa-instagram fa-1x icon-i"></i></a>
+    <a href="#"><i class="fab fa-youtube fa-1x icon-i"></i></a>
+</div>
+</div>
+</div>
+   </footer>
+
+
+
+   <script src="./script.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
